@@ -89,7 +89,7 @@ export default function Auth() {
               {variant == "login" ? "Login" : "Sign up"}
             </button>
             <div className="flex flex-row items-center gap-4 mt-8 justify-center">
-              <div className="bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition">
+              <div onClick={()=>signIn('google',{ callbackUrl:'/'})} className="bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition">
                 <FcGoogle size={30} />
               </div>
               <div onClick={()=>signIn('github',{ callbackUrl:'/'})} className="bg-white h-10 w-10 rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition">
