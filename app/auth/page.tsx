@@ -8,6 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import Footer from "@/components/Footer";
 
+
 export default function Auth() {
   const router = useRouter();
   const [name, setName] = useState("");
