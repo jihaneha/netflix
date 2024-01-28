@@ -17,12 +17,12 @@ const List: React.FC<ListProps> = ({ items }) => {
 const Footer = () => {
     return (
         <div className="bg-black bg-opacity-70 px-16 py-16 self-center rounded-md w-full text-white mt-10">
-            <p className="mb-5">Des questions ? Appelez le (+33) 06-00-00-00-00</p>
+            <p className="mb-5">Questions? Contact us.</p>
             <div className="flex justify-between">
-                <List items={['FAQ', 'Confidentialité']} />
-                <List items={[`Centre d'aide`, 'Préférences de cookies']} />
-                <List items={['Boutique Netflix', 'Mentions légales']} />
-                <List items={[`Conditions d'utilisation`, 'Choix liés à la pub']} />
+                <List items={['FAQ', 'Privacy']} />
+                <List items={[`Help Center`, 'Cookie Preferences']} />
+                <List items={['Netflix Shop', 'Corporate Information']} />
+                <List items={[`Terms of Use`, 'Ad Choices']} />
             </div>
         </div>
     );
