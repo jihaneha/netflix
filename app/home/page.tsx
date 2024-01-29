@@ -2,14 +2,16 @@
 import Input from "@/components/Input";
 import RedButton from "@/components/RedButton";
 import React, { useState } from "react";
+import { useRouter } from 'next/navigation';
 
 const Home = () => {
   const [email, setEmail] = useState("");
+  const router = useRouter();
   return (
     <div className="h-screen relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover text-white bg-opacity-50">
       <nav className="px-12 py-5 flex justify-between">
         <img src="/images/logo.png" alt="Logo" className="h-12" />
-        <RedButton content="Sign in" />
+        <RedButton content="Sign in" onClick={() => router.push('/auth')}/>
       </nav>
       <div className="text-center mt-20" >
         <h1 className="text-5xl font-black my-6">Unlimited movies, TV shows, and more</h1>

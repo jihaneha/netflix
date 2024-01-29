@@ -3,14 +3,20 @@
 import React, { useState } from 'react';
 import RedButton from './RedButton';
 import Input from './Input';
+import { useRouter } from 'next/navigation';
+
+
 
 const Hero1 = () => {
     const [email, setEmail] = useState("");
+    const router = useRouter();
     return (
         <div className="h-screen relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover text-white bg-opacity-50">
         <nav className="px-12 py-5 flex justify-between">
           <img src="/images/logo.png" alt="Logo" className="h-12" />
+       
           <RedButton content="Sign in" />
+        
         </nav>
         <div className="text-center mt-20" >
           <h1 className="text-5xl font-black my-6">Unlimited movies, TV shows, and more</h1>
