@@ -27,7 +27,6 @@ const Home = () => {
             id="email"
             type="email"
             value={email}
-          
           /></div>
           
           <RedButton content="Get Started >" />

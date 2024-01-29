@@ -110,9 +110,9 @@ export default function Auth() {
                 {variant == "login" ? "Create an account" : "Login"}
               </span>
             </p>
-          </div>
-        </div>
-      <Footer/>  
+                 </div>
+        </div><Footer/>
+ 
       </div> 
      
     </div>
