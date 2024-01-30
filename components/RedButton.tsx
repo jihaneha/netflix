@@ -8,7 +8,7 @@ interface MyButtonProps {
 
 const RedButton: React.FC<MyButtonProps>  = ( {content, onClick}) => {
     return (
-        <button className="text-white bg-red-600 px-3 hover:bg-red-800 transition rounded-md font-bold "  onClick={onClick}> {content}</button>
+        <button className="text-white bg-red-600 p-3 hover:bg-red-800 transition rounded-md font-bold "  onClick={onClick}> {content}</button>
     );
 };
 

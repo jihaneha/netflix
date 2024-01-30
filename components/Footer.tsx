@@ -16,7 +16,7 @@ const List: React.FC<ListProps> = ({ items }) => {
 
 const Footer = () => {
     return (
-        <div className="bg-black px-16 py-16 self-center rounded-md w-full text-white">
+        <div className="bg-black px-16 pb-16 self-center rounded-md w-full text-white">
             <p className="mb-5">Questions? Contact us.</p>
             <div className="flex justify-between">
                 <List items={['FAQ', 'Privacy']} />
