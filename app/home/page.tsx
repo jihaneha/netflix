@@ -63,8 +63,8 @@ const Home = () => {
       <div className="w-full h-screen text-white relative">
         <div className="absolute top-2/4 left-1/2 transform -translate-y-2/4 -translate-x-2/4 md:flex items-center justify-center w-full gap-8 p-24 border-b-8 border-solid border-gray-600">
           <div className="w-full p-10">
-            <h3 className="text-5xl font-black mb-6">Enjoy on your TV</h3>
-            <p className="text-2xl">
+            <h3 className="md:text-5xl font-black mb-6">Enjoy on your TV</h3>
+            <p className="md:text-2xl">
               Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
               Blu-ray players, and more.
             </p>
@@ -80,8 +80,8 @@ const Home = () => {
             <img src="\images\laptop.png" />
           </div>
           <div className="w-full p-10">
-            <h3 className="text-5xl font-black mb-6">Watch everywhere</h3>
-            <p className="text-2xl">
+            <h3 className="md:text-5xl font-black mb-6">Watch everywhere</h3>
+            <p className="md:text-2xl">
               Stream unlimited movies and TV shows on your phone, tablet,
               laptop, and TV.
             </p>
@@ -91,10 +91,10 @@ const Home = () => {
       <div className="w-full h-screen text-white relative">
         <div className="absolute top-2/4 left-1/2 transform -translate-y-2/4 -translate-x-2/4 md:flex items-center justify-center w-full gap-8 p-20 border-b-8 border-solid border-gray-600">
           <div className="w-full p-10">
-            <h3 className="text-5xl font-black mb-6">
+            <h3 className="md:text-5xl font-black mb-6">
               Create profiles for kids
             </h3>
-            <p className="text-2xl">
+            <p className="md:text-2xl">
               Send kids on adventures with their favorite characters in a space
               made just for them—free with your membership.
             </p>
@@ -104,24 +104,40 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen text-white relative">
+      <div className="w-full h-screen text-white relative ">
         <div className="absolute top-2/4 left-1/2 transform -translate-y-2/4 -translate-x-2/4 md:flex items-center justify-center w-full gap-8 p-20 border-b-8 border-solid border-gray-600">
           <div className="w-full ">
             <img src="\images\phone.png" width="80%" />
           </div>
           <div className="w-full p-10">
-            <h3 className="text-5xl font-black mb-6">Watch everywhere</h3>
-            <p className="text-2xl">
+            <h3 className="md:text-5xl font-black mb-6">Watch everywhere</h3>
+            <p className="md:text-2xl">
               Stream unlimited movies and TV shows on your phone, tablet,
               laptop, and TV.
             </p>
           </div>
         </div>
       </div>
-      <div className="h-screen w-full text-white text-center">
-        <h3 className="text-5xl font-black mb-6 py-20">
+      <div className="h-screen w-full text-white text-center border-b-8 border-solid border-gray-600 mb-6">
+        <h3 className="md:text-5xl font-black mb-6 py-20">
           Frequently Asked Questions
         </h3>
+        <p className="text-xl  font-normal text-base">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div className="sm:block md:flex justify-center mt-4 mx-10">
+          <div className="mr-2 max-w-screen-sm mb-6 md:mb-0">
+            <Input
+              label="Email address"
+              onChange={(e: any) => setEmail(e.target.value)}
+              id="email"
+              type="email"
+              value={email}
+            />
+          </div>
+
+          <RedButton content="Get Started >" />
+        </div>
       </div>
       <Footer />
     </div>
