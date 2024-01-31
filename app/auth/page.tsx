@@ -117,7 +117,6 @@ export default function Auth() {
                   onClick={toggleVariant}
                   className="text-white ml-1 hover:underline  cursor-pointer"
                 >
-                  {" "}
                   {variant == "login" ? "Create an account" : "Login"}
                 </span>
               </p>
