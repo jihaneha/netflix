@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className="px-16 py-16 self-center rounded-md w-full text-white  ">
       <p className="mb-5">Questions? Contact us.</p>
-      <div className="flex justify-between">
+      <div className="sm:flex justify-between">
         <List items={["FAQ", "Privacy"]} />
         <List items={[`Help Center`, "Cookie Preferences"]} />
         <List items={["Netflix Shop", "Corporate Information"]} />
