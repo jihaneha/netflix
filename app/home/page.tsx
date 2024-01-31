@@ -76,6 +76,7 @@ const Home = () => {
         title="Watch everywhere"
         content="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
         img="\images\laptop.png"
+        reverse={true}
       />
       <Hero
         title="Create profiles for kids"
@@ -86,6 +87,7 @@ const Home = () => {
         title="Download your shows to watch offline"
         content="Watch on a plane, train, or submarine..."
         img="\images\phone.png"
+        reverse={true}
       />
       <div className="h-screen w-full text-white text-center border-b-8 border-solid border-gray-600 mb-6">
         <h3 className="text-3xl font-black mb-6 p-15 p-4">
