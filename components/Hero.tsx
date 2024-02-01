@@ -10,7 +10,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ title, content, img, reverse }) => {
   const orderClass = reverse ? "sm:flex-row-reverse" : "";
   return (
-    <div className={`w-full border-b-8 border-solid border-gray-600 p-20`}>
+    <div className={`w-full border-b-8 border-solid border-greey p-20`}>
       <div className="w-full h-full   container max-w-5xl mx-auto">
         <div
           className={`flex flex-wrap justify-center items-center mx-auto pt-10 ${orderClass} `}

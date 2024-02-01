@@ -5,10 +5,12 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import FaqList from "@/components/FaqList";
 
 const Home = () => {
   const [email, setEmail] = useState("");
   const router = useRouter();
+
   return (
     <div className="text-white h-full w-full">
       <div className="bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover h-full">
@@ -89,14 +91,17 @@ const Home = () => {
         img="\images\phone.png"
         reverse={true}
       />
-      <div className="h-screen w-full text-white text-center border-b-8 border-solid border-gray-600 mb-6">
-        <h3 className="text-3xl font-black mb-6 p-15 p-4">
+      <div className=" text-white text-center border-b-8 border-solid border-greey mb-6 p-8 ">
+        <h3 className="text-3xl sm:text-5xl font-black mb-6 p-15 p-4 my-6">
           Frequently Asked Questions
         </h3>
+        <div className=" mb-16">
+          <FaqList />
+        </div>
         <p className="text-xl  font-normal text-base">
           Ready to watch? Enter your email to create or restart your membership.
         </p>
-        <div className="block sm:flex justify-center mt-4 mx-10 gap-2">
+        <div className="block sm:flex justify-center mt-4 mx-10 gap-2 mb-8">
           <Input
             label="Email address"
             onChange={(e: any) => setEmail(e.target.value)}
