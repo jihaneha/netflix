@@ -25,7 +25,8 @@ const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
         w-full
         text-md
         text-white
-        bg-transparent
+        bg-greeey
+        bg-opacity-50
         border
         appearance-none
         focus:outline-none
