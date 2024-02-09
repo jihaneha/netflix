@@ -78,7 +78,7 @@ const FaqList: React.FC = () => {
             onClick={() => toggleAnswer(index)}
           >
             <p className="text-lg ">{faq.question}</p>
-            <span className="text-white">
+            <span className="text-white text-2xl">
               {openIndex === index ? "_" : "+"}
             </span>
           </button>
