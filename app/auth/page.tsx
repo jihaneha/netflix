@@ -52,16 +52,26 @@ export default function Auth() {
     if (!validateFields()) return;
 
     try {
-      await signIn("credentials", {
+      const response = await axios.post("/api/login", {
         email,
         password,
-        redirect: false,
-        callBack: "/",
       });
-      router.push("/");
+
+      if (response.status === 200) {
+        // If user validation is successful, sign in using next-auth
+        await signIn("credentials", {
+          email,
+          password,
+          redirect: false,
+          callBack: "/",
+        });
+        router.push("/");
+      } else {
+        setError("Invalid email or password");
+      }
     } catch (error) {
-      console.log(error);
-      setError("Invalid email or password");
+      console.error("Error logging in:", error);
+      setError("An error occurred while logging in");
     }
   };
 
