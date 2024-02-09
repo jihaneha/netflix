@@ -104,21 +104,27 @@ export default function Auth() {
                 {variant === "register" && (
                   <Input
                     label="Username"
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                      setName(e.target.value)
+                    }
                     id="name"
                     value={name}
                   />
                 )}
                 <Input
                   label="Email"
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setEmail(e.target.value)
+                  }
                   id="email"
                   type="email"
                   value={email}
                 />
                 <Input
                   label="Password"
-                  onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setPassword(e.target.value)
+                  }
                   id="password"
                   type="password"
                   value={password}
