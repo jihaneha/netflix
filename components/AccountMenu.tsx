@@ -14,7 +14,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
 
   const handleSignOut = async () => {
     await signOut({ redirect: false });
-    router.push("/home");
+    router.push("/");
   };
 
   if (!visible) {
