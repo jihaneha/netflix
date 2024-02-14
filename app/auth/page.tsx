@@ -65,7 +65,7 @@ export default function Auth() {
           redirect: false,
           callBack: "/",
         });
-        router.push("/");
+        router.push("/home");
       } else {
         setError("Invalid email or password");
       }
